@@ -1,30 +1,28 @@
 <script lang="ts">
-	export let name: string;
+	import { dollarAmt } from './stores/content';
+	import centsConvert from './services/convertCentsToCoins';
+
+	window.onload = () => {
+		const form = document.getElementById('dollarConvertForm');
+		form?.addEventListener('submit', centsConvert)
+	};
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1>Dollars to Cents Converter</h1>
+	<h2>Find the Smallest Amount of Coins Given Current Cents</h2>
+	<div id="inputBox">
+		<form id="dollarConvertForm" name="convert">
+			<label for="dollars">Dollar Amount to Convert</label>
+			<input type="number" id="dollars" step="any" min="0" placeholder=0 required bind:value={$dollarAmt}>
+			<label for="converted">Coin Converted Amount:</label>
+			<input type="text" id="converted" name="outputBox" placeholder=0>
+		</form>
+	</div>
+	<div id="submitBtn">
+		<button form="dollarConvertForm" type="submit">Convert!</button>
+	</div>
 </main>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
 </style>
