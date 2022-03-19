@@ -1,7 +1,8 @@
 import { get } from 'svelte/store';
 import { dollarAmt } from '../stores/content';
 
-export default function coinsConvert (): void {
+export default function coinsConvert (event: Event): void {
+    event?.preventDefault
     const dollarAmtValue: number = get(dollarAmt)
     const returnedResult: string = convertCentstoCoins(dollarAmtValue)
     const selected = document.getElementById('finalOutput') as HTMLInputElement
