@@ -26,6 +26,9 @@
 		<button form="dollarConvertForm" type="submit">Convert Dollars to Cents!</button>
 		<button id="coinConvert" type="button">Convert Cents to Coins!</button>
 	</div>
+	<div>
+		<p id="finalOutput"></p>
+	</div>
 </main>
 
 <style>
