@@ -1,3 +1,3 @@
 import {writable} from 'svelte/store';
 
-export let dollarAmt = writable('');
+export let dollarAmt = writable(0);

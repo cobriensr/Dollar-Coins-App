@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { dollarAmt } from './stores/content';
-	import centsConvert from './services/convertCentsToCoins';
+	import centsConvert from '../src/services/convertDollarsToCents';
 
 	window.onload = () => {
 		const form = document.getElementById('dollarConvertForm');
