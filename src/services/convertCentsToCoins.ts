@@ -24,5 +24,5 @@ function convertCentstoCoins (value: number): string {
     let pennyResults: number = Math.floor(nickelRemainder / pennies)
     let pennyRemainder: number = nickelRemainder - (pennies * pennyResults)
 
-    return `There are ${quarterResults} quarters ${dimeResults} dimes ${nickelResults} nickels and ${pennyResults} pennies`
+    return `The smallest combination of coins available for this amount of coins is a total of ${quarterResults} quarters, ${dimeResults} dimes, ${nickelResults} nickels and ${pennyResults} pennies`
 }
