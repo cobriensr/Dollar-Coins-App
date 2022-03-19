@@ -5,8 +5,8 @@ export default function coinsConvert (event: Event): void {
     event.preventDefault()
     const dollarAmtValue: number = get(dollarAmt)
     const returnedResult: string = convertCentstoCoins(dollarAmtValue)
-    const selected = document.getElementById('finalOutput') as HTMLInputElement
-    selected.value = returnedResult
+    const selected = document.getElementById('finalOutput') as HTMLElement
+    selected.innerHTML = returnedResult
 }
 
 function convertCentstoCoins (value: number): string {
