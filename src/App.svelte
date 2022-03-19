@@ -14,7 +14,7 @@
 	<div id="inputBox">
 		<form id="dollarConvertForm" name="convert">
 			<label for="dollars">Dollar Amount to Convert</label>
-			<input type="number" id="dollars" step="any" min="0" placeholder=0 required bind:value={$dollarAmt}>
+			<input type="number" id="dollars" step=".01" min="0" placeholder=0 required bind:value={$dollarAmt}>
 			<label for="converted">Coin Converted Amount:</label>
 			<input type="text" id="converted" name="outputBox" placeholder=0>
 		</form>
