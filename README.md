@@ -1,4 +1,4 @@
-# Svelte
+# Dollars and Cents to Coins Converter
 
 This application takes a currency amount in dollars and cents and then converts them to an amount only containing cents. After this conversion, it then takes the coins and breaks them down into the smallest amount of coins possible to represent that currency amount using the following coins:
 
