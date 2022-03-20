@@ -12,11 +12,11 @@
 </script>
 
 <main>
-	<div class="antialiased text-gray-900 px-6 flex justify-center">
+	<div class="antialiased text-gray-900 flex justify-center">
 		<div class="max-w-xl mx-auto py-12 md:max-w-4xl">
 			<div class="py-4">
-				<h1 class="text-4xl font-bold">Dollars to Cents Converter</h1>
-				<h2 class="mt-1 text-lg text-gray-600">Find the Smallest Amount of Coins Given Current Cents</h2>
+				<h1 class="text-4xl font-bold flex justify-center">Dollars to Cents Converter</h1>
+				<h2 class="mt-1 text-lg text-gray-600 flex justify-center">Find the Smallest Amount of Coins Given Current Cents</h2>
 				<br>
 				<hr>
 			</div>
