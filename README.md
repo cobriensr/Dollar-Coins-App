@@ -1,20 +1,19 @@
 # Svelte
 
-This directory is a brief example of a [Svelte](https://svelte.dev/) site that can be deployed to Vercel with zero-configuration. If you need to use API Routes, we recommend using our [SvelteKit example](https://github.com/vercel/vercel/tree/main/examples/sveltekit).
+This application takes a currency amount in dollars and cents and then converts them to an amount only containing cents. After this conversion, it then takes the coins and breaks them down into the smallest amount of coins possible to represent that currency amount using the following coins:
 
-## Deploy Your Own
+1. Quarters
+2. Dimes
+3. Nickels
+4. Pennies
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/svelte&template=svelte)
-
-_Live Example: https://svelte.vercel.app_
+It will return a string value that has the amount of quarters, dimes, nickels and pennies in an interpolated string representing the smallest amount of possible coins for that dollar amount.
 
 ## Getting Started
 
-```bash
-npx degit sveltejs/template my-svelte-project
-cd my-svelte-project
-npm install
-npm run dev
-```
+To run this application locally, you can clone this repository and then run the following commands:
+
+1. npm install
+2. npm run dev
 
 Navigate to [localhost:8080](http://localhost:8080). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
