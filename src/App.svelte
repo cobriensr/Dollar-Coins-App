@@ -43,7 +43,7 @@
 				<button id="coinConvert" type="button" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">Convert Cents to Coins!</button>
 			</div>
 			<div>
-				<p class="mt-1 max-w-sm text-center ml-8" id="finalOutput"></p>
+				<p class="mt-1 max-w-sm text-center ml-7" id="finalOutput"></p>
 			</div>
 		</div>
 	</div>
