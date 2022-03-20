@@ -12,31 +12,31 @@
 </script>
 
 <main>
-	<div class="antialiased text-gray-900 px-6">
+	<div class="antialiased text-gray-900 px-6 flex justify-center">
 		<div class="max-w-xl mx-auto py-12 divide-y md:max-w-4xl">
 			<div class="py-8">
 				<h1 class="text-4xl font-bold">Dollars to Cents Converter</h1>
 				<h2 class="mt-2 text-lg text-gray-600">Find the Smallest Amount of Coins Given Current Cents</h2>
 			</div>
 			<div class="py-12" id="inputBox">
-				<div class="mt-8 max-w-md">			
+				<div class="mt-1 max-w-md">			
 					<form id="dollarConvertForm" name="convert">
 						<div class="grid grid-cols-1 gap-">
 							<label class="block" for="dollars">
-								<span class="text=gray-700">Dollar Amount to Convert:</span>
+								<span class="text=gray-700 flex justify-center">Dollar Amount to Convert:</span>
 								<input class="mt-1 block w-full" type="number" id="dollars" step=".01" min="0" placeholder=0 required bind:value={$dollarAmt}>
 							</label>
 							<label class="block" for="converted">
-								<span class="text-gray-700">Converted Amount in Cents:</span>
+								<span class="text-gray-700 flex justify-center">Converted Amount in Cents:</span>
 								<input class="mt-1 block w-full" type="text" id="converted" name="outputBox" placeholder=0>
 							</label>
 						</div>
 					</form>
 				</div>
 			</div>
-			<div id="submitBtn">
-				<button form="dollarConvertForm" type="submit">Convert Dollars to Cents!</button>
-				<button id="coinConvert" type="button">Convert Cents to Coins!</button>
+			<div class="flex justify-center" id="submitBtn">
+				<button form="dollarConvertForm" type="submit" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">Convert Dollars to Cents!</button>
+				<button id="coinConvert" type="button" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">Convert Cents to Coins!</button>
 			</div>
 			<div>
 				<p id="finalOutput"></p>
